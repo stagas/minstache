@@ -140,7 +140,7 @@ function section(obj, val, negate, str) {
  */
 
 function escape(html) {
-  return String(html || '')
+  return String(null != html ? html : '')
     .replace(/&/g, '&amp;')
     .replace(/"/g, '&quot;')
     .replace(/</g, '&lt;')
